@@ -26,7 +26,7 @@ from app.config import settings
 class GeminiManager:
     """
     Google Gemini API Manager (Primary LLM)
-    Handles Google Pro account with Gemini-1.5-Pro model
+    Handles Google Pro account with gemini-2.0-flash-lite model
     """
     
     def __init__(self):

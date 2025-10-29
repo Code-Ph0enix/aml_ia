@@ -45,7 +45,7 @@ class Settings:
     # GOOGLE GEMINI API
     # ========================================================================
     GOOGLE_API_KEY: str = os.getenv("GOOGLE_API_KEY", "")
-    GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-1.5-pro")
+    GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-2.0-flash-lite")
     GEMINI_REQUESTS_PER_MINUTE: int = int(os.getenv("GEMINI_REQUESTS_PER_MINUTE", "60"))
     
     # ========================================================================
@@ -225,7 +225,7 @@ print("=" * 80)
 #     # GOOGLE GEMINI API
 #     # ========================================================================
 #     GOOGLE_API_KEY: str = os.getenv("GOOGLE_API_KEY", "")
-#     GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-1.5-pro")
+#     GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-2.0-flash-lite")
     
 #     # ========================================================================
 #     # GROQ API (Optional - for your llm_manager)
@@ -427,7 +427,7 @@ print("=" * 80)
 # #     # GOOGLE GEMINI API
 # #     # ========================================================================
 # #     GOOGLE_API_KEY: str = os.getenv("GOOGLE_API_KEY", "")
-# #     GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-1.5-pro")
+# #     GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-2.0-flash-lite")
     
 # #     # ========================================================================
 # #     # GROQ API (Optional - for your llm_manager)
@@ -557,7 +557,7 @@ print("=" * 80)
 #     # GOOGLE GEMINI API
 #     # ========================================================================
 #     GOOGLE_API_KEY: str = os.getenv("GOOGLE_API_KEY", "")
-#     GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-1.5-pro")
+#     GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-2.0-flash-lite")
     
 #     # ========================================================================
 #     # GROQ API (Optional - for your llm_manager)
