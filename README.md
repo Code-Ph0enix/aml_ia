@@ -42,7 +42,7 @@ Existing banking chatbots suffer from:
 
 ### Solution
 QUESTRAG addresses these challenges through:
-- ✅ **Domain-specific RAG** trained on RBI regulations and banking policies  
+- ✅ **Domain-specific RAG** trained on banking queries / support data.  
 - ✅ **RL-optimized policy network** (BERT-based) for smart context-fetching decisions  
 - ✅ **Fine-tuned retriever model** using InfoNCE + Triplet Loss  
 - ✅ **Automated response evaluation** with reward-based learning  
