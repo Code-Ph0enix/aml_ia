@@ -71,10 +71,18 @@ QUESTRAG addresses these challenges through:
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 <p align="center">
   <img src="./assets/system_architecture.png" alt="System Architecture Diagram" width="750"/>
+</p>
+
+---
+
+## Sequence diagram
+
+<p align="center">
+  <img src="./assets/sequence_diagram.png" alt="Sequence Diagram" width="750"/>
 </p>
 
 ### 🔄 Workflow
