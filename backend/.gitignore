@@ -1,0 +1,479 @@
+# # ================================================================================
+# # BANKING RAG CHATBOT - .gitignore
+# # Prevents committing sensitive files, large models, and temporary files
+# # IMPORTANT: This protects your API keys and credentials!
+# # ================================================================================
+
+# # ============================================================================
+# # ENVIRONMENT VARIABLES (MOST IMPORTANT)
+# # ============================================================================
+# .env
+# .env.local
+# .env.production
+# .env.development
+# .env.*.local
+
+# # ============================================================================
+# # PYTHON
+# # ============================================================================
+# # Byte-compiled / optimized / DLL files
+# __pycache__/
+# *.py[cod]
+# *$py.class
+# *.so
+
+# # C extensions
+# *.so
+
+# # Distribution / packaging
+# .Python
+# build/
+# develop-eggs/
+# dist/
+# downloads/
+# eggs/
+# .eggs/
+# lib/
+# lib64/
+# parts/
+# sdist/
+# var/
+# wheels/
+# pip-wheel-metadata/
+# share/python-wheels/
+# *.egg-info/
+# .installed.cfg
+# *.egg
+# MANIFEST
+
+# # PyInstaller
+# *.manifest
+# *.spec
+
+# # Unit test / coverage reports
+# htmlcov/
+# .tox/
+# .nox/
+# .coverage
+# .coverage.*
+# .cache
+# nosetests.xml
+# coverage.xml
+# *.cover
+# *.py,cover
+# .hypothesis/
+# .pytest_cache/
+
+# # Jupyter Notebook
+# .ipynb_checkpoints
+# *.ipynb
+
+# # IPython
+# profile_default/
+# ipython_config.py
+
+# # Virtual environments
+# venv/
+# env/
+# ENV/
+# env.bak/
+# venv.bak/
+# .venv
+# .env/
+
+# # pyenv
+# .python-version
+
+# # pipenv
+# Pipfile.lock
+
+# # Poetry
+# poetry.lock
+
+# # ============================================================================
+# # ML MODELS (Optional - depends on Git LFS usage)
+# # ============================================================================
+# # If NOT using Git LFS, uncomment these to avoid committing large models:
+# # models/*.pth
+# # models/*.pt
+# # models/*.pkl
+# # models/*.bin
+# # models/*.h5
+
+# # If using Git LFS, comment out the above and models will be tracked by LFS
+
+# # Temporary model files
+# models/temp/
+# models/checkpoints/
+# *.ckpt
+
+# # ============================================================================
+# # DATA FILES
+# # ============================================================================
+# # Prevent committing large datasets
+# data/*.csv
+# data/*.json
+# data/*.jsonl
+# data/*.parquet
+# data/*.feather
+# data/raw/
+# data/processed/
+# data/temp/
+
+# # Keep .gitkeep files to preserve directory structure
+# !data/.gitkeep
+# !models/.gitkeep
+
+# # ============================================================================
+# # LOGS
+# # ============================================================================
+# # Log files
+# *.log
+# logs/
+# *.log.*
+
+# # ============================================================================
+# # DATABASES
+# # ============================================================================
+# # Local database files
+# *.db
+# *.sqlite
+# *.sqlite3
+
+# # ============================================================================
+# # IDEs & EDITORS
+# # ============================================================================
+# # VSCode
+# .vscode/
+# *.code-workspace
+
+# # PyCharm
+# .idea/
+# *.iml
+# *.iws
+
+# # Sublime Text
+# *.sublime-project
+# *.sublime-workspace
+
+# # Vim
+# *.swp
+# *.swo
+# *~
+
+# # Emacs
+# *~
+# \#*\#
+# .\#*
+
+# # ============================================================================
+# # MACOS
+# # ============================================================================
+# .DS_Store
+# .AppleDouble
+# .LSOverride
+
+# # Thumbnails
+# ._*
+
+# # ============================================================================
+# # WINDOWS
+# # ============================================================================
+# Thumbs.db
+# Thumbs.db:encryptable
+# ehthumbs.db
+# ehthumbs_vista.db
+# Desktop.ini
+
+# # ============================================================================
+# # LINUX
+# # ============================================================================
+# *~
+
+# # ============================================================================
+# # DOCKER
+# # ============================================================================
+# # Docker files (if we decide to add Docker later)
+# # .dockerignore is separate
+# docker-compose.override.yml
+# .docker/
+
+# # ============================================================================
+# # TEMPORARY FILES
+# # ============================================================================
+# *.tmp
+# *.temp
+# *.bak
+# *.backup
+# *.old
+# tmp/
+# temp/
+
+# # ============================================================================
+# # SECRETS & CREDENTIALS
+# # ============================================================================
+# # Any file with "secret" or "credential" in name
+# *secret*
+# *credential*
+# *password*
+# *.pem
+# *.key
+# *.crt
+# *.cer
+
+# # AWS credentials
+# .aws/
+
+# # Google Cloud credentials
+# *-credentials.json
+# service-account*.json
+
+# # ============================================================================
+# # CACHE
+# # ============================================================================
+# .cache/
+# *.cache
+
+# # Hugging Face cache
+# .huggingface/
+# transformers_cache/
+
+# # ============================================================================
+# # MONITORING & PROFILING
+# # ============================================================================
+# *.prof
+# *.lprof
+
+# # ============================================================================
+# # FRONTEND (if you add frontend to this repo)
+# # ============================================================================
+# node_modules/
+# .next/
+# out/
+# build/
+# dist/
+
+# # ============================================================================
+# # MISC
+# # ============================================================================
+# # System files
+# .Trash-*
+
+# # Backup files
+# *~
+# *.orig
+# *.rej
+
+# # Compressed files
+# *.zip
+# *.tar.gz
+# *.rar
+# *.7z
+
+# # ============================================================================
+# # PROJECT-SPECIFIC
+# # ============================================================================
+# # Add any project-specific patterns here
+# uploads/
+# downloads/
+# exports/
+
+# # Test outputs
+# test_outputs/
+# test_results/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ================================================================================
+# BANKING RAG CHATBOT - Backend .gitignore
+# Prevents committing sensitive files, large models, and temporary files
+# ================================================================================
+
+# ============================================================================
+# ENVIRONMENT VARIABLES (MOST IMPORTANT - PROTECTS API KEYS)
+# ============================================================================
+.env
+.env.local
+.env.production
+.env.development
+.env.*.local
+
+# ============================================================================
+# PYTHON
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv
+.env/
+
+# Testing
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# ============================================================================
+# ML MODELS & DATA (DO NOT COMMIT - TOO LARGE 1GB+)
+# ============================================================================
+# Model files (PyTorch, TensorFlow, etc.)
+app/models/*.pth
+app/models/*.pt
+app/models/*.pkl
+app/models/*.bin
+app/models/*.h5
+app/models/*.onnx
+app/models/*.safetensors
+models/*.pth
+models/*.pt
+models/*.pkl
+models/*.bin
+
+# FAISS indices (large vector databases)
+app/models/*.index
+app/models/*.faiss
+*.index
+*.faiss
+
+# Knowledge base and data files
+app/data/*.jsonl
+app/data/*.json
+app/data/*.csv
+app/data/*.parquet
+data/*.jsonl
+data/*.json
+data/*.csv
+
+# Temporary model files
+models/temp/
+models/checkpoints/
+*.ckpt
+
+# ============================================================================
+# LOGS
+# ============================================================================
+*.log
+logs/
+*.log.*
+
+# ============================================================================
+# DATABASES
+# ============================================================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================================================
+# IDEs & EDITORS
+# ============================================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# ============================================================================
+# OS FILES
+# ============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ============================================================================
+# CACHE & TEMPORARY
+# ============================================================================
+.cache/
+*.cache
+.huggingface/
+transformers_cache/
+sentence_transformers/
+*.tmp
+*.temp
+*.bak
+tmp/
+temp/
+
+# ============================================================================
+# SECRETS & CREDENTIALS (DOUBLE CHECK)
+# ============================================================================
+*secret*
+*credential*
+*password*
+*.pem
+*.key
+*.crt
+*.cer
+.aws/
+*-credentials.json
+service-account*.json
+
+# ============================================================================
+# KEEP DIRECTORY STRUCTURE
+# ============================================================================
+# These .gitkeep files preserve empty directories
+!app/models/.gitkeep
+!app/data/.gitkeep
+!logs/.gitkeep

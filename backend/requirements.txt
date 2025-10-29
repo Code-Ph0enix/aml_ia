@@ -1,0 +1,139 @@
+# # ================================================================================
+# # BANKING RAG CHATBOT API - DEPENDENCIES
+# # Python 3.10+ required
+# # ================================================================================
+
+# # ============================================================================
+# # CORE WEB FRAMEWORK
+# # ============================================================================
+# # FastAPI - Modern async web framework
+# fastapi==0.104.1
+
+# # Uvicorn - ASGI server for FastAPI
+# uvicorn[standard]==0.24.0
+
+# # Python multipart for file uploads (if needed later)
+# python-multipart==0.0.6
+
+# # ============================================================================
+# # CONFIGURATION & ENVIRONMENT
+# # ============================================================================
+# # Pydantic - Data validation and settings management
+# pydantic==2.5.0
+# pydantic-settings==2.1.0
+
+# # Python-dotenv - Load environment variables from .env file
+# python-dotenv==1.0.0
+
+# # ============================================================================
+# # DATABASE - MongoDB
+# # ============================================================================
+# # Motor - Async MongoDB driver for FastAPI
+# motor==3.3.2
+
+# # PyMongo - MongoDB Python driver (used by Motor)
+# pymongo==4.6.0
+
+# # ============================================================================
+# # AUTHENTICATION & SECURITY
+# # ============================================================================
+# # Python-jose - JWT token handling
+# python-jose[cryptography]==3.3.0
+
+# # Passlib - Password hashing
+# passlib[bcrypt]==1.7.4
+
+# # ============================================================================
+# # MACHINE LEARNING - PYTORCH & TRANSFORMERS
+# # ============================================================================
+# # PyTorch - Deep learning framework
+# torch==2.1.0
+
+# # Transformers - HuggingFace transformers library (BERT, e5-base-v2)
+# transformers==4.35.0
+
+# # Sentence-Transformers - Sentence embeddings
+# sentence-transformers==2.2.2
+
+# # ============================================================================
+# # VECTOR SEARCH
+# # ============================================================================
+# # FAISS - Facebook AI Similarity Search (CPU version)
+# faiss-cpu==1.7.4
+
+# # ============================================================================
+# # LLM INTEGRATIONS
+# # ============================================================================
+# # LangChain - LLM orchestration framework
+# langchain==0.1.0
+
+# # LangChain Groq integration
+# langchain-groq==0.0.1
+
+# # LangChain Google GenAI (for Gemini)
+# langchain-google-genai==1.0.0
+
+# # Google Generative AI - Direct Gemini API
+# google-generativeai==0.3.2
+
+# # ============================================================================
+# # UTILITIES
+# # ============================================================================
+# # NumPy - Numerical computing
+# numpy==1.24.3
+
+# # Tiktoken - OpenAI tokenizer (for token counting)
+# tiktoken==0.5.1
+
+# # Rich - Beautiful terminal output (for logging)
+# rich==13.7.0
+
+# # Requests - HTTP library
+# requests==2.31.0
+
+# # ============================================================================
+# # OPTIONAL: DEVELOPMENT TOOLS (comment out for production)
+# # ============================================================================
+# # Pytest - Testing framework
+# # pytest==7.4.3
+
+# # Black - Code formatter
+# # black==23.12.0
+
+# # Flake8 - Linter
+# # flake8==6.1.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+python-dotenv==1.0.0
+motor==3.3.2
+pymongo==4.6.0
+google-generativeai==0.3.1
+sentence-transformers==2.2.2
+faiss-cpu==1.7.4
+numpy==1.24.3
+torch==2.1.0
+transformers==4.35.2
+
+# AUTH DEPENDENCIES (NEW!)
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+bcrypt==4.1.1

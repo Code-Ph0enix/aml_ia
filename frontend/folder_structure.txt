@@ -1,0 +1,38 @@
+frontend/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── components/
+│   │   ├── Chat/
+│   │   │   ├── ChatContainer.jsx       # Main chat UI
+│   │   │   ├── MessageBubble.jsx       # Individual messages
+│   │   │   ├── MessageInput.jsx        # Input box with features
+│   │   │   ├── TypingIndicator.jsx     # Animated typing dots
+│   │   │   └── PolicyBadge.jsx         # FETCH/NO_FETCH badge
+│   │   ├── Layout/
+│   │   │   ├── Navbar.jsx              # Top navigation
+│   │   │   ├── Sidebar.jsx             # Conversation history
+│   │   │   └── WelcomeScreen.jsx       # Initial landing
+│   │   └── UI/
+│   │       ├── Button.jsx              # Reusable button
+│   │       ├── Loader.jsx              # Loading animations
+│   │       └── ThemeToggle.jsx         # Dark/Light switch
+│   ├── context/
+│   │   ├── ChatContext.jsx             # Chat state management
+│   │   └── ThemeContext.jsx            # Theme state management
+│   ├── services/
+│   │   └── api.js                      # Backend API calls
+│   ├── utils/
+│   │   ├── constants.js                # App constants
+│   │   └── helpers.js                  # Helper functions
+│   ├── styles/
+│   │   └── globals.css                 # Global styles + Tailwind
+│   ├── App.jsx                         # Main app component
+│   ├── main.jsx                        # React entry point
+│   └── index.html                      # HTML template
+├── .env.local                          # Environment variables
+├── .gitignore                          # Git ignore
+├── package.json                        # Dependencies
+├── tailwind.config.js                  # Tailwind configuration
+├── vite.config.js                      # Vite configuration
+└── README.md                           # Frontend documentation

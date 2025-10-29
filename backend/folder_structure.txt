@@ -1,0 +1,40 @@
+AML-IA-IMP/
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── config.py
+│   │   ├── main.py
+│   │   ├── api/
+│   │   │   ├── __init__.py
+│   │   │   └── v1/
+│   │   │       ├── __init__.py
+│   │   │       ├── chat.py
+│   │   │       ├── auth.py
+│   │   │       └── admin.py
+│   │   ├── services/
+│   │   │   ├── __init__.py
+│   │   │   └── chat_service.py
+│   │   ├── ml/
+│   │   │   ├── __init__.py
+│   │   │   ├── retriever.py
+│   │   │   └── policy_network.py
+│   │   ├── db/
+│   │   │   ├── __init__.py
+│   │   │   ├── mongodb.py
+│   │   │   └── repositories/
+│   │   │       ├── __init__.py
+│   │   │       └── conversation_repository.py
+│   │   └── core/
+│   │       ├── __init__.py
+│   │       ├── security.py
+│   │       └── api_key_manager.py
+│   ├── models/
+│   │   └── (your .pth, .pt, .pkl files go here)
+│   ├── data/
+│   │   └── final_knowledge_base.jsonl
+│   ├── .env
+│   ├── .env.example
+│   ├── requirements.txt
+│   ├── Dockerfile
+│   ├── .gitignore
+│   └── README.md
