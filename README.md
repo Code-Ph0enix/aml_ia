@@ -247,19 +247,136 @@ questrag/
 
 ## 📊 Datasets
 
-*(Unchanged formatting — already clean and descriptive)*
+### 1. Final Knowledge Base
+- **Size**: 19,352 question-answer pairs
+- **Categories**: 15 banking categories
+- **Intents**: 22 unique intents (focused on ATM, CARD, LOAN, ACCOUNT)
+- **Source**: Combination of:
+  - Bitext Retail Banking Dataset (Hugging Face)
+  - RetailBanking-Conversations Dataset
+  - Manually curated FAQs from SBI, ICICI, HDFC, Yes Bank, Axis Bank
+
+### 2. Retriever Training Dataset
+- **Size**: 11,655 paraphrases
+- **Source**: 1,665 unique FAQs from knowledge base
+- **Paraphrases per FAQ**:
+  - 4 English paraphrases
+  - 2 Hinglish paraphrases
+  - Original FAQ
+- **Training**: InfoNCE Loss + Triplet Loss
+
+### 3. Policy Network Training Dataset
+- **Size**: 182 queries from 6 chat sessions
+- **Format**: (state, action, reward) tuples
+- **Actions**: FETCH (1) or NO_FETCH (0)
+- **Rewards**: +2.0, +0.5, -0.5
 
 ---
+
 
 ## 📚 API Documentation
 
-*(Unchanged, retains same formatting — clean endpoints + payload examples)*
+### Authentication
+
+#### Register
+POST /api/v1/auth/register
+Content-Type: application/json
+```
+{
+"username": "john_doe",
+"email": "john@example.com",
+"password": "securepassword123"
+}
+```
+
+
+#### Login
+POST /api/v1/auth/login
+Content-Type: application/json
+
+```
+{
+"username": "john_doe",
+"password": "securepassword123"
+}
+```
+Response:
+```
+{
+"access_token": "eyJhbGciOiJIUzI1NiIs...",
+"token_type": "bearer"
+}
+```
+---
+
+### Chat
+
+#### Send Message
+POST /api/v1/chat/
+Authorization: Bearer <token>
+Content-Type: application/json
+```
+{
+"query": "What are the interest rates for home loans?",
+"session_id": "optional-session-id"
+}
+```
+Response:
+```
+{
+"response": "Current home loan interest rates range from 8.5% to 9.5% per annum...",
+"session_id": "abc123",
+"metadata": {
+"policy_action": "FETCH",
+"retrieval_score": 0.89,
+"documents_retrieved": 5
+}
+}
+```
+
+#### Get Conversation History
+GET /api/v1/chat/history/{session_id}
+Authorization: Bearer <token>
+
+Response:
+```
+{
+"session_id": "abc123",
+"messages": [
+{
+"role": "user",
+"content": "What are the interest rates?",
+"timestamp": "2025-10-29T10:30:00Z"
+},
+{
+"role": "assistant",
+"content": "Current rates are...",
+"timestamp": "2025-10-29T10:30:05Z"
+}
+]
+}
+```
+
 
 ---
 
+
 ## 🤝 Contributing
 
-*(Unchanged, already well formatted)*
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Development Guidelines
+- Follow PEP 8 for Python code
+- Use ESLint + Prettier for JavaScript/React
+- Write comprehensive docstrings and comments
+- Add unit tests for new features
+- Update documentation accordingly
 
 ---
 
@@ -270,9 +387,22 @@ MIT License — see [LICENSE](LICENSE)
 ---
 
 ## 🙏 Acknowledgments
+### Research Inspiration
+- **Main Paper**: "Optimizing Retrieval Augmented Generation for Domain-Specific Chatbots with Reinforcement Learning" (AAAI 2024)
+- **Additional References**:
+  - "Evaluating BERT-based Rewards for Question Generation with RL"
+  - "Self-Reasoning for Retrieval-Augmented Language Models"
 
-*(Unchanged)*
+### Open Source Resources
+- [RL-Self-Improving-RAG](https://github.com/subrata-samanta/RL-Self-Improving-RAG)
+- [ARENA](https://github.com/ren258/ARENA)
+- [RAGTechniques](https://github.com/NirDiamant/RAGTechniques)
+- [Financial-RAG-From-Scratch](https://github.com/cse-amarjeet/Financial-RAG-From-Scratch)
 
+### Datasets
+- [Bitext Retail Banking Dataset](https://huggingface.co/datasets/bitext/Bitext-retail-banking-llm-chatbot-training-dataset)
+- [RetailBanking-Conversations](https://huggingface.co/datasets/oopere/RetailBanking-Conversations)
+  
 ---
 
 ## 📞 Contact
