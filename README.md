@@ -73,8 +73,12 @@ QUESTRAG addresses these challenges through:
 
 ## System Architecture
 
-<p align="center">
+<!-- <p align="center">
   <img src="./assets/system_architecture.png" alt="System Architecture Diagram" width="750"/>
+</p> -->
+
+<p align="center">
+  <img src="./assets/system.png" alt="System Architecture Diagram" width="750"/>
 </p>
 
 ---
